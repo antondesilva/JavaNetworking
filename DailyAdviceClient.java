@@ -7,7 +7,7 @@ public class DailyAdviceClient {
 	{
 		try
 		{
-			Socket s = new Socket("192.168.10.102", 3847);//Create a socket with server's IP and port
+			Socket s = new Socket("localhost", 3847);//Create a socket with server's IP and port
 			//Chain some streams together and use a BufferedReader
 			InputStreamReader streamReader = new InputStreamReader(s.getInputStream());
 			BufferedReader reader = new BufferedReader(streamReader);
